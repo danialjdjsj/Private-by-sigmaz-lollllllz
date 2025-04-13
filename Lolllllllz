@@ -1,1 +1,26 @@
-king of leak lol
+-- LocalScript (harus dijalankan di sisi client, misalnya di StarterPlayerScripts)
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+-- Buat UI
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "SigmazOverlay"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Size = UDim2.new(1, 0, 1, 0)
+textLabel.Position = UDim2.new(0, 0, 0, 0)
+textLabel.BackgroundTransparency = 1
+textLabel.Text = "peler biji kau pecah"
+textLabel.TextColor3 = Color3.new(1, 0, 0)
+textLabel.TextStrokeTransparency = 0
+textLabel.TextScaled = true
+textLabel.Font = Enum.Font.SourceSansBold
+textLabel.Parent = screenGui
+
+-- Delay sedikit biar sempat kelihatan
+wait(2)
+
+-- Kick player dari sisi client (tidak beneran keluar server, hanya simulasi kick)
+player:Kick("King of leak Lolz by sigmaz")
